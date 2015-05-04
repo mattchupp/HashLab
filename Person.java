@@ -7,6 +7,7 @@
  * @included    -
  */
 
+// stores information for person
 public class Person {
 
     private int ssn; 

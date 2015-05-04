@@ -7,6 +7,7 @@
  * @included    -
  */
 
+// Hash Table
 public class HashTable {
 
     // create a new item table
