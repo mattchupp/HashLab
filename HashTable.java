@@ -1,4 +1,3 @@
-
 /**      
  * @author      Matt Chupp
  * @id          mlchupp 
@@ -10,11 +9,16 @@
 
 public class HashTable {
 
+    // create a new item table
     Item[] table; 
-    int size; 
-    int compares; 
+    int size;  // size of the table
+    int compares;  // number of compares that happen
     
-    
+    /**
+     * Constructor for HashTable 
+     * sets the size of the table
+     * @param tableSize
+     */
     public HashTable(int tableSize) {
         size = tableSize; 
         table = new Item[size]; 

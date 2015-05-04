@@ -7,27 +7,17 @@
  * @included    -
  */
 
-public class Lab6 {
+import java.util.*;
 
-    public static void main(String[] args) {
-        
-//        Integer[] array = new Integer[50]; 
-//        QuickSort array = new QuickSort(50); 
-//        
-//        for (int i = 0; i < 50; i++) {
-//            array.add((int)(Math.random()*100)); 
-//        }
-//        
-//        QuickSort.sort(array);
-//        
-//        for (int i = 0; i < 50; i++) {
-//            System.out.println("" + array[i]); 
-//        }
-//        
-//       System.out.println("Compares " + QuickSort.getCompareCount()); 
-//       System.out.println("Swaps " + QuickSort.getSwapCount()); 
-//       
-       
-    }
+public class Lab6 {
     
+    private static int[] array = new int[10000];
+    private static int collsion = 0;
+    private static int totalCollions = 0;
+   
+    public static void main(String[] args){
+        
+        
+    }
+
 }
