@@ -24,11 +24,15 @@ public class HashTable {
         table = new Item[size]; 
     }
     
+    /**
+     * Add an object to the HashTable 
+     * @param object
+     */
     public void add(Comparable object) {
         int hash = object.hashCode();  
         Item item = new Item((Object)object);
         
-        if(table[hash] == null) {
+        if (table[hash] == null) {
             table[hash] = item; 
         } else {
             item.setLink(table[hash]);
@@ -36,6 +40,11 @@ public class HashTable {
         }
     }
     
+    /**
+     * finds the object in the HashTable 
+     * @param object
+     * @return object if the object exists if not returns null
+     */
     public Comparable find(Comparable object) {
         int hash = object.hashCode(); 
         Item item = table[hash]; 
@@ -52,10 +61,17 @@ public class HashTable {
         return null; 
     }
     
+    /**
+     * Get the number of compares
+     * @return compares
+     */
     public int getCompares() {
         return compares; 
     }
     
+    /**
+     * reset the number of compares
+     */
     public void resetCompares() {
         compares = 0; 
     }

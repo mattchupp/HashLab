@@ -7,25 +7,38 @@
  * @included    -
  */
 
-
 public class QuickSort {
 
-    private int swapCount; 
-    private int compareCount;    
-    private int count = 0; 
+    private int swapCount;  // how many swaps
+    private int compareCount;    // how many compares
+    private int count = 0;  
     private Object[] table; 
     
-    
+    /**
+     * Constructor for QuickSort class 
+     * Creates a table of Ojects
+     * @param size of table
+     */
     public QuickSort(int size) {
         table = new Object[size]; 
     }
     
+    /**
+     * Add object to the table 
+     * @param o
+     */
     public void add(Object o) {
         
         table[count] = o; 
         count++; 
     }
     
+    /**
+     * Algorithm for sorting the list 
+     * @param array
+     * @param low
+     * @param high
+     */
     public void recursiveSort(Comparable[] array, int low, int high) {
         
         if (low >= high) {
@@ -59,6 +72,10 @@ public class QuickSort {
        
     }
     
+    /**
+     * sort the list
+     * @param array
+     */
     public void sort(Comparable[] array) {
         
         // if empty array return
@@ -69,6 +86,12 @@ public class QuickSort {
         recursiveSort(array, 0, array.length - 1);        
     }
     
+    /**
+     * swap two objects in table 
+     * @param array
+     * @param x
+     * @param y
+     */
     public void swap(Comparable[] array, int x, int y) {
         
         Comparable temp = array[x];
@@ -78,18 +101,32 @@ public class QuickSort {
         swapCount++; 
     }
     
+    /**
+     * 
+     * @return number of swaps
+     */
     public int getSwapCount() {       
         return swapCount; 
     }
     
+    /**
+     * 
+     * @return number of compares
+     */
     public int getCompareCount() {
         return compareCount; 
     }
     
+    /**
+     * resets the swap count
+     */
     public void resetSwapCount() {
         swapCount = 0; 
     }   
     
+    /**
+     * resets the compare count
+     */
     public void resetCompareCount() {
         compareCount = 0; 
     }

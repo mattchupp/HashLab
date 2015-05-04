@@ -14,7 +14,7 @@ public class Person {
     private String email; 
     
     /**
-     * 
+     * Initialize a person 
      * @param iSsn
      * @param iEmail
      * @param iName
@@ -35,7 +35,8 @@ public class Person {
     }
     
     /**
-     * @return 
+     * hashes the ssn to get ints at 0, 4, 5, and 8
+     * @return hashed ssn 
      */
     @Override 
     public int hashCode() {
@@ -48,24 +49,24 @@ public class Person {
     }
     
     /**
-     * 
-     * @return
+     * get the ssn 
+     * @return ssn 
      */
     public int getSSN() {
         return ssn; 
     }
     
     /**
-     * 
-     * @return
+     * get the name
+     * @return name
      */
     public String getName() {
         return name; 
     }
     
     /**
-     * 
-     * @return
+     * get email of person
+     * @return email 
      */
     public String getEmail() {
         return email; 
