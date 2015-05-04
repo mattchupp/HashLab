@@ -7,6 +7,7 @@
  * @included    -
  */
 
+// Stores a list and sorts the list 
 public class QuickSort {
 
     private int swapCount;  // how many swaps

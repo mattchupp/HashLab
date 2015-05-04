@@ -27,7 +27,7 @@ public class Person {
     }
     
     /**
-     * 
+     * Person
      * @param iSsn
      */
     public Person(int iSsn) {

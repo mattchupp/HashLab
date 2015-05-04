@@ -15,6 +15,7 @@ public class Lab6 {
     private static int collsion = 0;
     private static int totalCollions = 0;
    
+    // main
     public static void main(String[] args){
         
         
